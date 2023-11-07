@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/landing-section.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(110%)
+}
+
+.container{
+    padding: 10px 12%;
+}
+
+.logo{
+    margin-top: 20px;
+    width: 320px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #f9f9f9;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    transition: 0.6s;
+}
+
+
+/* hero-section */
+.landing-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.header-text{
+    flex-basis: 55%;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.header-text p{
+    font-size: 20px;
+}
+
+.header-text h1 span{
+   color: #ff004f;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h3{
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.resume-btn{
+    margin-top: 50px;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid #ff004f;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: #ff004f;
+    
+}
+
+.resume-btn:hover{
+    background-color: #ff004f;
+    color: #f9f9f9;
+}
+
+.photo-content{
+    flex-basis: 45%;
+    margin-top: 100px;
+}
+
+.photo-content img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    height: 620px;
+}
+
+
+/* about */
+.about{
+    padding: 60px 0;
+    background: #2A3439;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    flex-basis: 40%;
+}
+
+.col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col-2{
+    flex-basis: 50%;
+    margin-top: 30px;
+}
+
+.subtitle{
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.about-text{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tab-title{
+    display: flex;
+    margin: 30px 0 40px;
+}
+
+.tab-links{
+    font-size: 18px;
+    margin-right: 50px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    background: #ff004f;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 30%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.tab-contents ul li span{
+    color: #b31949;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+/* 
+contact */
+.contact{
+    color: #f9f9f9;
+    background-color: #2A3439;
+    padding: 60px 0;
+}
+
+.contact-left{
+    flex-basis: 50%;
+}
+
+.contact-right{
+    flex-basis: 50%;
+}
+
+.contact-left h1{
+    color: #f9f9f9;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.social{
+    margin-top: 30px;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+
+.social a:hover{
+    color: #ff004f;
+    transform: translateY(-7px);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+form button{
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff004f;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+/* portfolio */
+.portfolio{
+    color: #f9f9f9;
+    background-color: #849194;
+    padding: 50px 0;
+}
+
+.portfolio h1{
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.showcase-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 30px;
+    z-index: -1;
+}
+
+.showcase-list .work{
+    background-color: #262626;
+    padding: 0 0 20px;
+    border-radius: 12px;
+}
+
+.work h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 25px;
+    padding: 0 20px;
+}
+
+.work p{
+    font-size: 16px;
+    margin: 10px 0 0;
+    padding: 0 20px;
+}
+
+.work a i{
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-top: 12px;
+    display: block;
+    aspect-ratio: 16/9;
+}
+
+@media only screen and (max-width: 600px){
+    /* home */
+    nav .fa-bars{
+        display: block;
+        font-size: 38px;
+    }
+
+    nav .fa-xmark{
+        display: block;
+        font-size: 30px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        padding-top: 60px;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 30px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+    }
+
+    .header-text{
+        flex-basis: 100%;
+        margin-top: 160px;
+    }
+
+    .header-text p{
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 36px;
+    }
+
+    .header-text h3{
+        font-size: 20px;
+    }
+
+    .landing-section{
+        display: contents;
+        margin-top: 20px;
+    }
+
+    .photo-section{
+        flex-basis: 100%;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .subtitle{
+        font-size: 40px;
+        
+    }
+
+    .col-1, .col-2{
+        flex-basis: 100%;
+    }
+}

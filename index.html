@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ---home -->
+    <header class="navbar" id="top">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/draft-logo.png" alt="logo">
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="landing-section">
+                <div class="header-text">
+                    <p>Hello there,</p>
+                    <h1>I'm <span class="type">Ian Chua</span>, <br>a front-end developer</h1>
+                    <h3>Welcome to my portfolio</h3>
+                    <a class="resume-btn"
+                        href="https://drive.google.com/drive/u/0/folders/1z85J6UIAYZsVndCLAiUnG8m2OhXljX51">Download
+                        resume</a>
+                </div>
+                <div class="photo-content">
+                    <img src="images/me-photo.jpg" alt="personal photo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ---about -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/aboutme.jpg" alt="about">
+                </div>
+                <div class="col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about-text">I'm a student studying in Republic Polytechnic, taking Diploma in Digital
+                        Design and Development Course(DDDD). Being passionate in IT has led me to take up this course
+                        where I get to develop my skills as a back-end developer in structuring and building of website
+                        from scratch, so I can pursue this career path after graduation.<br><br>
+                        I also learnt UI/UX where I get to experience the process of designing an app/website from
+                        user's experience which would allow me to understand from their perspective to develop a design
+                        and experience that will meet their needs</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" data-tab="skills">Skills</p>
+                        <p class="tab-links" data-tab="education">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front end</span><br>HTML, CSS, Javascript, Bootstrap 5</li>
+                            <li><span>Backend</span><br>PHP, Java</li>
+                            <li><span>Design and creatives</span><br>Adobe XD, Photoshop and Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2025</span><br>Currently studying in Republic Polytechnic</li>
+                            <li><span>2018 - 2021</span><br>Studied in Choa Chu Kang Primary School</li>
+                            <li><span>2012 - 2017</span><br>Studied in Concord Primary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---portfolio -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Portfolio</h1>
+            <div class="showcase-list">
+                <div class="work">
+                    <img src="images/moviesGA.png" alt="movies GA">
+                    <h2>Movie web</h2>
+                    <p>Movie website that lets user register, login, view movie details and add, update and delete their
+                        reviews</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="work">
+                    <img src="images/C206GA.png" alt="lunchbox GA">
+                    <h2>Lunchbox ordering system</h2>
+                    <p>Designing a lunch ordering system using Java and using jUnit to test individual methods in
+                        normal, boundary and error conditions and ensure that they pass the test.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="work">
+                    <img src="images/L02 C219 activity 2.png" alt="UI/UX GA">
+                    <h2>Mobile Portfolio UI/UX</h2>
+                    <p>Using adobe XD, I designed a high fidelity webpage for a skateboard company, called go skate as
+                        part of an individual activity.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---contact me -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>chuaxiangyuian@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+65 88931647</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/ch_xy_ian/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://m.facebook.com/chuaxiang.yuian/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required><br>
+                        <input type="email" name="Email" placeholder="Your Email" required><br>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.tab-links').click(function () {
+                var tabName = $(this).data('tab');
+
+                $('.tab-contents').removeClass('active-tab');
+                $('.tab-links').removeClass('active-link');
+                $('#' + tabName).addClass('active-tab');
+                $(this).addClass('active-link');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.menu-btn').click(function () {
+                $('ul').toggleClass('active');
+            });
+        });
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".type", {
+            strings: ["", "Ian Chua"],
+            typeSpeed: 120,
+            backSpeed: 120,
+            loop: true,
+        });
+    </script>
+
+</body>
+
+</html>
